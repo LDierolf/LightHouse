@@ -1,0 +1,483 @@
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:01:09 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 138ms (Views: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:03:04 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 159ms (Views: 8.1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-10 19:03:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home" for 127.0.0.1 at 2017-10-10 19:04:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home" for 127.0.0.1 at 2017-10-10 19:05:30 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 944ms (Views: 817.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-10 19:06:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-10 19:07:33 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 28.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:07:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 29.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:07:40 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 26.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:07:40 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:07:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:07:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:13:18 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5582ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/config
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/images
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/node_modules
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/popper_js-1.11.1/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/javascripts):
+    4:     <title>Lighthouse</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3570264118804236999_70296404553780'
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:18:19 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4265ms (Views: 4074.4ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2017-10-10 19:18:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.min.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2017-10-10 19:18:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap.min.js"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:19:04 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 27ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-min' with type 'application/javascript'
+Checked in these paths: 
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/config
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/images
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/node_modules
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/popper_js-1.11.1/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__351878782884582508_70271520123600'
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:21:36 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 27ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-min' with type 'application/javascript'
+Checked in these paths: 
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/config
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/images
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/node_modules
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/popper_js-1.11.1/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/javascripts):
+     9:     <%= csrf_meta_tags %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    14:     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    15:     <!--[if lt IE 9]>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__351878782884582508_70271515853320'
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:21:37 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 32ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-min' with type 'application/javascript'
+Checked in these paths: 
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/config
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/images
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/node_modules
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/popper_js-1.11.1/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/javascripts):
+     9:     <%= csrf_meta_tags %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    14:     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    15:     <!--[if lt IE 9]>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__351878782884582508_70271521541240'
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:21:38 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 24ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-min' with type 'application/javascript'
+Checked in these paths: 
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/config
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/images
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/node_modules
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/popper_js-1.11.1/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/javascripts):
+     9:     <%= csrf_meta_tags %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    14:     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    15:     <!--[if lt IE 9]>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__351878782884582508_70271530306060'
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:21:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 27ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-min' with type 'application/javascript'
+Checked in these paths: 
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/config
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/images
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/app/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/ldierolf/Desktop/Projects/LightHouse/Lighthouse/node_modules
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/popper_js-1.11.1/assets/javascripts
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/stylesheets
+  /Users/ldierolf/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.beta/assets/javascripts):
+     9:     <%= csrf_meta_tags %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    14:     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    15:     <!--[if lt IE 9]>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__351878782884582508_70271532829980'
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:21:45 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 68.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:22:12 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 52.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:22:15 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 48.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:24:10 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 50.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:24:42 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2837ms (Views: 2834.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:24:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 68.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:25:36 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 51.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:25:38 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 57.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:25:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 68ms (Views: 65.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:26:20 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 55.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:35:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 583ms (Views: 416.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 19:36:03 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 90ms (Views: 87.2ms)
+
+
