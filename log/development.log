@@ -1297,3 +1297,633 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 73ms (Views: 70.9ms)
 
 
+Started GET "/dashboard" for 127.0.0.1 at 2017-10-11 22:12:36 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDashboards (20171011200009)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "dashboards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171011200009"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-11 20:12:46.543792"], ["updated_at", "2017-10-11 20:12:46.543792"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/dashboard" for 127.0.0.1 at 2017-10-11 22:12:48 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2017-10-11 22:13:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2017-10-11 22:13:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-11 22:13:06 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 188ms (Views: 185.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at 2017-10-11 22:13:08 +0200
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mDashboard Load (0.3ms)[0m  [1m[34mSELECT "dashboards".* FROM "dashboards"[0m
+  Rendered dashboards/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 74ms (Views: 66.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:14:32 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:14:51 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 71ms (Views: 67.8ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:14:53 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 62ms (Views: 58.5ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at 2017-10-11 22:14:53 +0200
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mDashboard Load (0.1ms)[0m  [1m[34mSELECT "dashboards".* FROM "dashboards"[0m
+  Rendered dashboards/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 71ms (Views: 65.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:14:54 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:15:14 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @settings.each do |setting| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', setting %></td>
+    16:         <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+  
+app/views/settings/index.html.erb:13:in `_app_views_settings_index_html_erb___3614689053660888664_70278441188280'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:16:32 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @settings.each do |setting| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', setting %></td>
+    16:         <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+  
+app/views/settings/index.html.erb:13:in `_app_views_settings_index_html_erb___3614689053660888664_70278442452820'
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:17:00 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @settings.each do |setting| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', setting %></td>
+    16:         <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+  
+app/views/settings/index.html.erb:13:in `_app_views_settings_index_html_erb___3614689053660888664_70278438807860'
+Started GET "/" for 127.0.0.1 at 2017-10-11 22:17:05 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 76ms (Views: 73.8ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:17:06 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 12ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @settings.each do |setting| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', setting %></td>
+    16:         <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+  
+app/views/settings/index.html.erb:13:in `_app_views_settings_index_html_erb___3614689053660888664_70278452392080'
+Started GET "/" for 127.0.0.1 at 2017-10-11 22:17:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 84ms (Views: 81.9ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at 2017-10-11 22:17:10 +0200
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mDashboard Load (0.5ms)[0m  [1m[34mSELECT "dashboards".* FROM "dashboards"[0m
+  Rendered dashboards/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 65ms (Views: 58.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:17:11 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  Rendered settings/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @settings.each do |setting| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', setting %></td>
+    16:         <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+  
+app/views/settings/index.html.erb:13:in `_app_views_settings_index_html_erb___3614689053660888664_70278459556560'
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:18:23 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  [1m[36mSetting Load (0.5ms)[0m  [1m[34mSELECT "settings".* FROM "settings"[0m
+  Rendered settings/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such table: settings: SELECT "settings".* FROM "settings"):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @settings.each do |setting| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', setting %></td>
+    16:         <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+  
+app/views/settings/index.html.erb:13:in `_app_views_settings_index_html_erb___3614689053660888664_70278451023120'
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:18:24 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  [1m[36mSetting Load (0.5ms)[0m  [1m[34mSELECT "settings".* FROM "settings"[0m
+  Rendered settings/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such table: settings: SELECT "settings".* FROM "settings"):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @settings.each do |setting| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', setting %></td>
+    16:         <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+  
+app/views/settings/index.html.erb:13:in `_app_views_settings_index_html_erb___3614689053660888664_70278383552800'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSettings (20171011202004)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "settings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171011202004"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:20:29 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT "settings".* FROM "settings"[0m
+  Rendered settings/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 74.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at 2017-10-11 22:20:31 +0200
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mDashboard Load (0.2ms)[0m  [1m[34mSELECT "dashboards".* FROM "dashboards"[0m
+  Rendered dashboards/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 67ms (Views: 60.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:20:32 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:20:33 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 68ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:20:34 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:20:35 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:20:35 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 75ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:22:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 84ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-11 22:22:29 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-11 22:22:29 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:22:30 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 69ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-11 22:22:31 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 72ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:22:32 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-11 22:22:32 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:22:33 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at 2017-10-11 22:22:34 +0200
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mDashboard Load (0.4ms)[0m  [1m[34mSELECT "dashboards".* FROM "dashboards"[0m
+  Rendered dashboards/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:22:35 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 74ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at 2017-10-11 22:22:37 +0200
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mDashboard Load (0.2ms)[0m  [1m[34mSELECT "dashboards".* FROM "dashboards"[0m
+  Rendered dashboards/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-11 22:22:38 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:22:38 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  [1m[36mSetting Load (0.3ms)[0m  [1m[34mSELECT "settings".* FROM "settings"[0m
+  Rendered settings/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at 2017-10-11 22:22:39 +0200
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mDashboard Load (0.2ms)[0m  [1m[34mSELECT "dashboards".* FROM "dashboards"[0m
+  Rendered dashboards/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:22:43 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT "settings".* FROM "settings"[0m
+  Rendered settings/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 71ms (Views: 66.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/settings/new" for 127.0.0.1 at 2017-10-11 22:22:44 +0200
+Processing by SettingsController#new as HTML
+  Rendering settings/new.html.erb within layouts/application
+  Rendered settings/_form.html.erb (11.9ms)
+  Rendered settings/new.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 85ms (Views: 75.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/settings" for 127.0.0.1 at 2017-10-11 22:22:46 +0200
+Processing by SettingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOGttc69RJvYFnLBF6JtY/UY4pp/mV5P/w1LH6YqxAh2E+RMRMZ1oRJIoXfGS4eVf6ODGgpsQCxc2jHtbHfR5w==", "commit"=>"Create Setting"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "settings" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-10-11 20:22:46.511517"], ["updated_at", "2017-10-11 20:22:46.511517"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/settings/1
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/settings/1" for 127.0.0.1 at 2017-10-11 22:22:46 +0200
+Processing by SettingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSetting Load (0.4ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering settings/show.html.erb within layouts/application
+  Rendered settings/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 73ms (Views: 63.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:22:48 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT "settings".* FROM "settings"[0m
+  Rendered settings/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 66ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/settings/1" for 127.0.0.1 at 2017-10-11 22:22:52 +0200
+Processing by SettingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BRwdVq2QmEHKX3DorH6Wt9+hkiWi39p2tFQmqmAIewg2kiaGBZFS5j9ab3Y2II7JOUX/gg7zkxiCHusXfqT3eg==", "id"=>"1"}
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "settings" WHERE "settings"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/settings
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2017-10-11 22:22:52 +0200
+Processing by SettingsController#index as HTML
+  Rendering settings/index.html.erb within layouts/application
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT "settings".* FROM "settings"[0m
+  Rendered settings/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.2ms)
+
+
