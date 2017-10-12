@@ -1,4 +1,28 @@
 body {
 	padding: 0;
 	margin: 0;
+
+	.heading-spacer {
+		padding-top: 20px;
+	}
+
+	a {
+		color: $orange-base;
+		-webkit-transition: color 0.5s;
+		transition: color 0.5s;
+	}
+
+	a:hover {
+		color: $orange-base-hover;
+		text-decoration: none;
+	}
+
+	.btn {
+		background-color: $orange-base;
+		border-color: $orange-base;
+	}
+	.btn:hover {
+		background-color: $orange-base-hover;
+		border-color: $orange-base-hover;
+	}
 }

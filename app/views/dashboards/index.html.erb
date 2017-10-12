@@ -1,25 +1,34 @@
-<p id="notice"><%= notice %></p>
+<div class="row heading-spacer">
+  <div class="col-md-12">
+    <div class="alert alert-success" role="alert">
+      <p id="notice"><%= notice %></p>
+    </div>
+  </div>
+</div>
 
-<h1>Dashboards</h1>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Dashboards</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <%= link_to "New Dashboard", new_dashboard_path, {class: 'btn btn-primary btn-lg btn-block'} %>
 
-  <tbody>
-    <% @dashboards.each do |dashboard| %>
-      <tr>
-        <td><%= link_to 'Show', dashboard %></td>
-        <td><%= link_to 'Edit', edit_dashboard_path(dashboard) %></td>
-        <td><%= link_to 'Destroy', dashboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @dashboards.each do |dashboard| %>
+          <tr>
+            <td><%= link_to 'Show', dashboard %></td>
+            <td><%= link_to 'Edit', edit_dashboard_path(dashboard) %></td>
+            <td><%= link_to 'Destroy', dashboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-<%= link_to 'New Dashboard', new_dashboard_path %>
